@@ -7,9 +7,7 @@ pipeline {
   stages {
     stage('Building image') {
       steps{
-        script {
-          docker.build registry + ":$BUILD_NUMBER"
-        }
+        sh "docker run -it --rm sunbirdtest/cheers2019"
       }
     }
   }
