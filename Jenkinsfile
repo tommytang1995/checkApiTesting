@@ -7,7 +7,7 @@ pipeline {
   stages {
     stage('Building image') {
       steps{
-        sh "docker run -it --rm sunbirdtest/cheers2019"
+        sh "winpty docker run -it --rm sunbirdtest/cheers2019"
       }
     }
   }
